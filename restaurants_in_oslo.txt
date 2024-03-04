@@ -13,3 +13,15 @@
 11. Hyde
 12. Munch restaurant
 13. TAK Oslo
+
+# Expensive restaurants
+
+1. Statholdergaarden Kjeller
+2. Statholdergaarden Klassisk
+3. Maaemo
+4. Kontrast
+5. Sabi Omakase
+6. Plah
+7. À L'aise
+8. Stallen
+9. J2 Modern Korean
