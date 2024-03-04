@@ -13,3 +13,8 @@
 11. Hyde
 12. Munch restaurant
 13. TAK Oslo
+
+# Cheap restaurants
+1. Izakaya
+2. ZZ Pizza
+3. Ya Ya's
