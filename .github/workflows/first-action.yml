@@ -1,0 +1,12 @@
+name: First Workflow # The name of the workflow
+on: workflow_dispatch # This means that the workflow is triggered manually
+jobs:
+    first-job: # Name of the first job
+        runs-on: ubuntu-latest # Which runner the action is performed on
+        steps:
+            # Step 1
+            - name: print greeting
+              run: echo "Hello World!"
+            # Step 2
+            - name: print goodbye
+              run: echo "Good Bye!"
