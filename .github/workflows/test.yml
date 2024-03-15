@@ -5,3 +5,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
+              run: |
+                echo "1"
+                echo "2"
