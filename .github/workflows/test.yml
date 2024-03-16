@@ -1,10 +1,20 @@
 name: deployment test
 on: workflow_dispatch # Find all trigger events here: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+# on: push # Comment the trigger to stop it running automatically on all git pushes
 jobs:
     test:
         runs-on: ubuntu-latest
         steps:
+            # Step 1 - Get the code from the repo
             - name: Get code
-              run: |
-                echo "1"
-                echo "2"
+              uses: actions/checkout
+            # Step 2 - Check if NodeJS v18 is installed on the runner, and install if not already 
+            - name: Check NodeJS-installed
+              uses: action/setup-Node
+              with:
+                node-version: 18
+            # Step 3 - Run NPM (Node Package Manager) tool for installing dependency packages
+            - name: Install dependencies
+              run: npm ci
+            - name: Run tests
+              run: npm test
